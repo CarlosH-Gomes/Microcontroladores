@@ -73,8 +73,6 @@ void main(void) {
             estadosMaquina();
         }       
     }
-
-    
 }
 
 void __interrupt(high_priority) tmr (void)

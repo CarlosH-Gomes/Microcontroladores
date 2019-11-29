@@ -1,10 +1,3 @@
-/* 
- * File:   configura.h
- * Author: Carlos e Silas
- *
- * Created on 20 de Setembro de 2019, 09:28
- */
-
 // PIC18F4520 Configuration Bit Settings
 
 // 'C' source line config statements
