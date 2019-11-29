@@ -1,6 +1,6 @@
 /* 
  * File:   configura.h
- * Author: marcos
+ * Author: Carlos e Silas
  *
  * Created on 20 de Setembro de 2019, 09:28
  */

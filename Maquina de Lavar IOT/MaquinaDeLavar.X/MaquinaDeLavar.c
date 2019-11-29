@@ -24,8 +24,8 @@
 #define ledValvula PORTBbits.RB6
 #define ledMotorBomb PORTBbits.RB7
 
-float volts=0;
-int contador = 0, bits=0, tempo=0, estado=0;
+
+int  tempo=0, estado=0;
 char estadoMes[15],tempoDis[5];
 
 void escreve(void);
