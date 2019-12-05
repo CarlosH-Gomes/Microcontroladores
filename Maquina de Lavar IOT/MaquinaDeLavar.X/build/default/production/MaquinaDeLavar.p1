@@ -572,154 +572,140 @@ Version 4.0 HI-TECH Software Intermediate Code
 "7001
 [; ;E:\ProgramasWindowns\Microchip\xc8\v2.00\pic\include\pic18f4520.h: 7001: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
-"13 ./configura.h
+"6 ./configura.h
 [p x OSC = INTIO67 ]
-"14
+"7
 [p x FCMEN = OFF ]
-"15
+"8
 [p x IESO = OFF ]
-"18
+"11
 [p x PWRT = OFF ]
-"19
+"12
 [p x BOREN = SBORDIS ]
-"20
+"13
 [p x BORV = 3 ]
-"23
+"16
 [p x WDT = OFF ]
-"24
+"17
 [p x WDTPS = 32768 ]
-"27
+"20
 [p x CCP2MX = PORTC ]
-"28
+"21
 [p x PBADEN = OFF ]
-"29
+"22
 [p x LPT1OSC = OFF ]
-"30
+"23
 [p x MCLRE = ON ]
-"33
+"26
 [p x STVREN = ON ]
-"34
+"27
 [p x LVP = OFF ]
-"35
+"28
 [p x XINST = OFF ]
-"38
+"31
 [p x CP0 = OFF ]
-"39
+"32
 [p x CP1 = OFF ]
-"40
+"33
 [p x CP2 = OFF ]
-"41
+"34
 [p x CP3 = OFF ]
-"44
+"37
 [p x CPB = OFF ]
-"45
+"38
 [p x CPD = OFF ]
-"48
+"41
 [p x WRT0 = OFF ]
-"49
+"42
 [p x WRT1 = OFF ]
-"50
+"43
 [p x WRT2 = OFF ]
-"51
+"44
 [p x WRT3 = OFF ]
-"54
+"47
 [p x WRTC = OFF ]
-"55
+"48
 [p x WRTB = OFF ]
-"56
+"49
 [p x WRTD = OFF ]
-"59
+"52
 [p x EBTR0 = OFF ]
-"60
+"53
 [p x EBTR1 = OFF ]
-"61
+"54
 [p x EBTR2 = OFF ]
-"62
+"55
 [p x EBTR3 = OFF ]
-"65
+"58
 [p x EBTRB = OFF ]
-"72
-[; ;./configura.h: 72: void config(void)
+"65
+[; ;./configura.h: 65: void config(void)
 [v _config `(v ~T0 @X0 1 ef ]
-"73
-[; ;./configura.h: 73: {
+"66
+[; ;./configura.h: 66: {
 {
 [e :U _config ]
 [f ]
-"74
-[; ;./configura.h: 74:     TRISA = 0B11011111;
+"67
+[; ;./configura.h: 67:     TRISA = 0B11011111;
 [e = _TRISA -> -> 223 `i `uc ]
-"75
-[; ;./configura.h: 75:     TRISB = 0B00000000;
+"68
+[; ;./configura.h: 68:     TRISB = 0B00000000;
 [e = _TRISB -> -> 0 `i `uc ]
-"76
-[; ;./configura.h: 76:     TRISC = 0B11111111;
+"69
+[; ;./configura.h: 69:     TRISC = 0B11111111;
 [e = _TRISC -> -> 255 `i `uc ]
-"77
-[; ;./configura.h: 77:     TRISD = 0B00000000;
+"70
+[; ;./configura.h: 70:     TRISD = 0B00000000;
 [e = _TRISD -> -> 0 `i `uc ]
-"78
-[; ;./configura.h: 78:     TRISE = 0B00001100;
+"71
+[; ;./configura.h: 71:     TRISE = 0B00001100;
 [e = _TRISE -> -> 12 `i `uc ]
-"79
-[; ;./configura.h: 79:     OSCCON = 0B01100011;
+"72
+[; ;./configura.h: 72:     OSCCON = 0B01100011;
 [e = _OSCCON -> -> 99 `i `uc ]
-"80
-[; ;./configura.h: 80:     IPEN=1;
+"73
+[; ;./configura.h: 73:     IPEN=1;
 [e = _IPEN -> -> 1 `i `b ]
-"81
-[; ;./configura.h: 81:     INTCON = 0B11000000;
+"74
+[; ;./configura.h: 74:     INTCON = 0B11000000;
 [e = _INTCON -> -> 192 `i `uc ]
-"82
-[; ;./configura.h: 82:     T0CON = 0B11000011;
+"75
+[; ;./configura.h: 75:     T0CON = 0B11000011;
 [e = _T0CON -> -> 195 `i `uc ]
-"83
-[; ;./configura.h: 83:     ADCON0 = 0B00000001;
+"76
+[; ;./configura.h: 76:     ADCON0 = 0B00000001;
 [e = _ADCON0 -> -> 1 `i `uc ]
-"84
-[; ;./configura.h: 84:     ADCON1 = 0B00001110;
+"77
+[; ;./configura.h: 77:     ADCON1 = 0B00001110;
 [e = _ADCON1 -> -> 14 `i `uc ]
-"85
-[; ;./configura.h: 85:     ADCON2 = 0B10010100;
+"78
+[; ;./configura.h: 78:     ADCON2 = 0B10010100;
 [e = _ADCON2 -> -> 148 `i `uc ]
-"86
-[; ;./configura.h: 86:     TXSTA = 0B00100100;
+"79
+[; ;./configura.h: 79:     TXSTA = 0B00100100;
 [e = _TXSTA -> -> 36 `i `uc ]
-"87
-[; ;./configura.h: 87:     RCSTA = 0B10010000;
+"80
+[; ;./configura.h: 80:     RCSTA = 0B10010000;
 [e = _RCSTA -> -> 144 `i `uc ]
-"88
-[; ;./configura.h: 88:     BAUDCON =0;
+"81
+[; ;./configura.h: 81:     BAUDCON =0;
 [e = _BAUDCON -> -> 0 `i `uc ]
-"89
-[; ;./configura.h: 89:     SPBRG = 25;
+"82
+[; ;./configura.h: 82:     SPBRG = 25;
 [e = _SPBRG -> -> 25 `i `uc ]
-"90
-[; ;./configura.h: 90:     RCIE = 1;
+"83
+[; ;./configura.h: 83:     RCIE = 1;
 [e = _RCIE -> -> 1 `i `b ]
-"91
-[; ;./configura.h: 91:     RCIP = 1;
+"84
+[; ;./configura.h: 84:     RCIP = 1;
 [e = _RCIP -> -> 1 `i `b ]
-"92
-[; ;./configura.h: 92: }
+"85
+[; ;./configura.h: 85: }
 [e :UE 284 ]
 }
-"27 MaquinaDeLavar.c
-[; ;MaquinaDeLavar.c: 27: float volts=0;
-[v _volts `f ~T0 @X0 1 e ]
-[i _volts
--> -> 0 `i `f
-]
-"28
-[; ;MaquinaDeLavar.c: 28: int contador = 0, bits=0, tempo=0, estado=0;
-[v _contador `i ~T0 @X0 1 e ]
-[i _contador
--> 0 `i
-]
-[v _bits `i ~T0 @X0 1 e ]
-[i _bits
--> 0 `i
-]
+"28 MaquinaDeLavar.c
+[; ;MaquinaDeLavar.c: 28: int tempo=0, estado=0;
 [v _tempo `i ~T0 @X0 1 e ]
 [i _tempo
 -> 0 `i
@@ -868,110 +854,110 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 286 ]
 [e $U 287  ]
 [e :U 288 ]
-"78
-[; ;MaquinaDeLavar.c: 78: }
+"76
+[; ;MaquinaDeLavar.c: 76: }
 [e :UE 285 ]
 }
 [v $root$_tmr `(v ~T0 @X0 0 e ]
-"80
-[; ;MaquinaDeLavar.c: 80: void __attribute__((picinterrupt("high_priority"))) tmr (void)
+"78
+[; ;MaquinaDeLavar.c: 78: void __attribute__((picinterrupt("high_priority"))) tmr (void)
 [v _tmr `(v ~T41 @X0 1 ef ]
-"81
-[; ;MaquinaDeLavar.c: 81: {
+"79
+[; ;MaquinaDeLavar.c: 79: {
 {
 [e :U _tmr ]
 [f ]
-"82
-[; ;MaquinaDeLavar.c: 82:     if(RCIF)
+"80
+[; ;MaquinaDeLavar.c: 80:     if(RCIF)
 [e $ ! _RCIF 304  ]
-"83
-[; ;MaquinaDeLavar.c: 83:     {
+"81
+[; ;MaquinaDeLavar.c: 81:     {
 {
-"84
-[; ;MaquinaDeLavar.c: 84:         RCIF=0;
+"82
+[; ;MaquinaDeLavar.c: 82:         RCIF=0;
 [e = _RCIF -> -> 0 `i `b ]
-"85
-[; ;MaquinaDeLavar.c: 85:             if (RCREG=='T')
+"83
+[; ;MaquinaDeLavar.c: 83:             if (RCREG=='T')
 [e $ ! == -> _RCREG `ui -> 84 `ui 305  ]
-"86
-[; ;MaquinaDeLavar.c: 86:             {
+"84
+[; ;MaquinaDeLavar.c: 84:             {
 {
-"87
-[; ;MaquinaDeLavar.c: 87:                 while (RCREG=='T'){
+"85
+[; ;MaquinaDeLavar.c: 85:                 while (RCREG=='T'){
 [e $U 306  ]
 [e :U 307 ]
 {
-"88
-[; ;MaquinaDeLavar.c: 88:                 }
+"86
+[; ;MaquinaDeLavar.c: 86:                 }
 }
 [e :U 306 ]
-"87
-[; ;MaquinaDeLavar.c: 87:                 while (RCREG=='T'){
+"85
+[; ;MaquinaDeLavar.c: 85:                 while (RCREG=='T'){
 [e $ == -> _RCREG `ui -> 84 `ui 307  ]
 [e :U 308 ]
-"89
-[; ;MaquinaDeLavar.c: 89:             }else if(RCREG=='Q'){
+"87
+[; ;MaquinaDeLavar.c: 87:             }else if(RCREG=='Q'){
 }
 [e $U 309  ]
 [e :U 305 ]
 [e $ ! == -> _RCREG `ui -> 81 `ui 310  ]
 {
-"90
-[; ;MaquinaDeLavar.c: 90:                 estadosMaquina();
+"88
+[; ;MaquinaDeLavar.c: 88:                 estadosMaquina();
 [e ( _estadosMaquina ..  ]
-"91
-[; ;MaquinaDeLavar.c: 91:             }
+"89
+[; ;MaquinaDeLavar.c: 89:             }
 }
 [e $U 311  ]
-"92
-[; ;MaquinaDeLavar.c: 92:             else if(RCREG=='C'){
+"90
+[; ;MaquinaDeLavar.c: 90:             else if(RCREG=='C'){
 [e :U 310 ]
 [e $ ! == -> _RCREG `ui -> 67 `ui 312  ]
 {
-"93
-[; ;MaquinaDeLavar.c: 93:                 estadosMaquina();
+"91
+[; ;MaquinaDeLavar.c: 91:                 estadosMaquina();
 [e ( _estadosMaquina ..  ]
-"94
-[; ;MaquinaDeLavar.c: 94:             }else if(RCREG=='L'){
+"92
+[; ;MaquinaDeLavar.c: 92:             }else if(RCREG=='L'){
 }
 [e $U 313  ]
 [e :U 312 ]
 [e $ ! == -> _RCREG `ui -> 76 `ui 314  ]
 {
-"95
-[; ;MaquinaDeLavar.c: 95:                 estado = 1;
+"93
+[; ;MaquinaDeLavar.c: 93:                 estado = 1;
 [e = _estado -> 1 `i ]
-"96
-[; ;MaquinaDeLavar.c: 96:                 estadosMaquina();
+"94
+[; ;MaquinaDeLavar.c: 94:                 estadosMaquina();
 [e ( _estadosMaquina ..  ]
-"97
-[; ;MaquinaDeLavar.c: 97:             }else if(RCREG=='D'){
+"95
+[; ;MaquinaDeLavar.c: 95:             }else if(RCREG=='D'){
 }
 [e $U 315  ]
 [e :U 314 ]
 [e $ ! == -> _RCREG `ui -> 68 `ui 316  ]
 {
-"98
-[; ;MaquinaDeLavar.c: 98:                 estado = 9;
+"96
+[; ;MaquinaDeLavar.c: 96:                 estado = 9;
 [e = _estado -> 9 `i ]
-"99
-[; ;MaquinaDeLavar.c: 99:                 estadosMaquina();
+"97
+[; ;MaquinaDeLavar.c: 97:                 estadosMaquina();
 [e ( _estadosMaquina ..  ]
-"100
-[; ;MaquinaDeLavar.c: 100:             }else if(RCREG=='A'){
+"98
+[; ;MaquinaDeLavar.c: 98:             }else if(RCREG=='A'){
 }
 [e $U 317  ]
 [e :U 316 ]
 [e $ ! == -> _RCREG `ui -> 65 `ui 318  ]
 {
-"101
-[; ;MaquinaDeLavar.c: 101:                 estado = estado + 1;
+"99
+[; ;MaquinaDeLavar.c: 99:                 estado = estado + 1;
 [e = _estado + _estado -> 1 `i ]
-"102
-[; ;MaquinaDeLavar.c: 102:                 estadosMaquina();
+"100
+[; ;MaquinaDeLavar.c: 100:                 estadosMaquina();
 [e ( _estadosMaquina ..  ]
-"103
-[; ;MaquinaDeLavar.c: 103:             }
+"101
+[; ;MaquinaDeLavar.c: 101:             }
 }
 [e :U 318 ]
 [e :U 317 ]
@@ -979,395 +965,395 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 313 ]
 [e :U 311 ]
 [e :U 309 ]
-"104
-[; ;MaquinaDeLavar.c: 104:     }
+"102
+[; ;MaquinaDeLavar.c: 102:     }
 }
 [e :U 304 ]
-"105
-[; ;MaquinaDeLavar.c: 105: }
+"103
+[; ;MaquinaDeLavar.c: 103: }
 [e :UE 303 ]
 }
-"107
-[; ;MaquinaDeLavar.c: 107: void tempo1(void)
+"105
+[; ;MaquinaDeLavar.c: 105: void tempo1(void)
 [v _tempo1 `(v ~T0 @X0 1 ef ]
-"108
-[; ;MaquinaDeLavar.c: 108: {
+"106
+[; ;MaquinaDeLavar.c: 106: {
 {
 [e :U _tempo1 ]
 [f ]
-"109
-[; ;MaquinaDeLavar.c: 109:     for(tempo=5;tempo>-1;tempo--)
+"107
+[; ;MaquinaDeLavar.c: 107:     for(tempo=5;tempo>-1;tempo--)
 {
 [e = _tempo -> 5 `i ]
 [e $ > _tempo -U -> 1 `i 320  ]
 [e $U 321  ]
 [e :U 320 ]
-"110
-[; ;MaquinaDeLavar.c: 110:     { if(estado!=0){
+"108
+[; ;MaquinaDeLavar.c: 108:     { if(estado!=0){
 {
 [e $ ! != _estado -> 0 `i 323  ]
 {
-"111
-[; ;MaquinaDeLavar.c: 111:             _delay((unsigned long)((1000)*(4000000/4000.0)));
+"109
+[; ;MaquinaDeLavar.c: 109:             _delay((unsigned long)((1000)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"112
-[; ;MaquinaDeLavar.c: 112:             sprintf(tempoDis, "%i", tempo);
+"110
+[; ;MaquinaDeLavar.c: 110:             sprintf(tempoDis, "%i", tempo);
 [e ( _sprintf (1 , (. , &U _tempoDis :s 1C _tempo ]
-"113
-[; ;MaquinaDeLavar.c: 113:             escreve2();}
+"111
+[; ;MaquinaDeLavar.c: 111:             escreve2();}
 [e ( _escreve2 ..  ]
 }
 [e :U 323 ]
-"114
-[; ;MaquinaDeLavar.c: 114:         }
+"112
+[; ;MaquinaDeLavar.c: 112:         }
 }
 [e -- _tempo -> 1 `i ]
 [e $ > _tempo -U -> 1 `i 320  ]
 [e :U 321 ]
 }
-"115
-[; ;MaquinaDeLavar.c: 115: }
+"113
+[; ;MaquinaDeLavar.c: 113: }
 [e :UE 319 ]
 }
-"117
-[; ;MaquinaDeLavar.c: 117: void estadosMaquina(void)
+"115
+[; ;MaquinaDeLavar.c: 115: void estadosMaquina(void)
 [v _estadosMaquina `(v ~T0 @X0 1 ef ]
-"118
-[; ;MaquinaDeLavar.c: 118: {
+"116
+[; ;MaquinaDeLavar.c: 116: {
 {
 [e :U _estadosMaquina ]
 [f ]
-"119
-[; ;MaquinaDeLavar.c: 119:         if (estado == 0) {
+"117
+[; ;MaquinaDeLavar.c: 117:         if (estado == 0) {
 [e $ ! == _estado -> 0 `i 325  ]
 {
-"120
-[; ;MaquinaDeLavar.c: 120:             PORTBbits.RB7 =0;
+"118
+[; ;MaquinaDeLavar.c: 118:             PORTBbits.RB7 =0;
 [e = . . _PORTBbits 0 7 -> -> 0 `i `uc ]
-"121
-[; ;MaquinaDeLavar.c: 121:             PORTBbits.RB5 =0;
+"119
+[; ;MaquinaDeLavar.c: 119:             PORTBbits.RB5 =0;
 [e = . . _PORTBbits 0 5 -> -> 0 `i `uc ]
-"122
-[; ;MaquinaDeLavar.c: 122:             PORTBbits.RB6 =0;
+"120
+[; ;MaquinaDeLavar.c: 120:             PORTBbits.RB6 =0;
 [e = . . _PORTBbits 0 6 -> -> 0 `i `uc ]
-"123
-[; ;MaquinaDeLavar.c: 123:             PORTBbits.RB0 = 0;
+"121
+[; ;MaquinaDeLavar.c: 121:             PORTBbits.RB0 = 0;
 [e = . . _PORTBbits 0 0 -> -> 0 `i `uc ]
-"124
-[; ;MaquinaDeLavar.c: 124:             TXREG = 0;
+"122
+[; ;MaquinaDeLavar.c: 122:             TXREG = 0;
 [e = _TXREG -> -> 0 `i `uc ]
-"125
-[; ;MaquinaDeLavar.c: 125:             sprintf(estadoMes, "Desligado");
+"123
+[; ;MaquinaDeLavar.c: 123:             sprintf(estadoMes, "Desligado");
 [e ( _sprintf (1 , &U _estadoMes :s 2C ]
-"126
-[; ;MaquinaDeLavar.c: 126:             escreve();
+"124
+[; ;MaquinaDeLavar.c: 124:             escreve();
 [e ( _escreve ..  ]
-"127
-[; ;MaquinaDeLavar.c: 127:         }
+"125
+[; ;MaquinaDeLavar.c: 125:         }
 }
 [e $U 326  ]
-"128
-[; ;MaquinaDeLavar.c: 128:         else if (estado == 1) {
+"126
+[; ;MaquinaDeLavar.c: 126:         else if (estado == 1) {
 [e :U 325 ]
 [e $ ! == _estado -> 1 `i 327  ]
 {
-"129
-[; ;MaquinaDeLavar.c: 129:             sprintf(estadoMes, "Encher");
+"127
+[; ;MaquinaDeLavar.c: 127:             sprintf(estadoMes, "Encher");
 [e ( _sprintf (1 , &U _estadoMes :s 3C ]
-"130
-[; ;MaquinaDeLavar.c: 130:             PORTBbits.RB0 = 1;
+"128
+[; ;MaquinaDeLavar.c: 128:             PORTBbits.RB0 = 1;
 [e = . . _PORTBbits 0 0 -> -> 1 `i `uc ]
-"131
-[; ;MaquinaDeLavar.c: 131:             PORTBbits.RB7 =1;
+"129
+[; ;MaquinaDeLavar.c: 129:             PORTBbits.RB7 =1;
 [e = . . _PORTBbits 0 7 -> -> 1 `i `uc ]
-"132
-[; ;MaquinaDeLavar.c: 132:             PORTBbits.RB6 =1;
+"130
+[; ;MaquinaDeLavar.c: 130:             PORTBbits.RB6 =1;
 [e = . . _PORTBbits 0 6 -> -> 1 `i `uc ]
-"133
-[; ;MaquinaDeLavar.c: 133:             TXREG = 1;
+"131
+[; ;MaquinaDeLavar.c: 131:             TXREG = 1;
 [e = _TXREG -> -> 1 `i `uc ]
-"134
-[; ;MaquinaDeLavar.c: 134:             estado = estado + 1;
+"132
+[; ;MaquinaDeLavar.c: 132:             estado = estado + 1;
 [e = _estado + _estado -> 1 `i ]
-"135
-[; ;MaquinaDeLavar.c: 135:             escreve();
+"133
+[; ;MaquinaDeLavar.c: 133:             escreve();
 [e ( _escreve ..  ]
-"136
-[; ;MaquinaDeLavar.c: 136:         }
+"134
+[; ;MaquinaDeLavar.c: 134:         }
 }
 [e $U 328  ]
-"137
-[; ;MaquinaDeLavar.c: 137:         else if( (estado == 2) && (PORTCbits.RC3 == 0)){
+"135
+[; ;MaquinaDeLavar.c: 135:         else if( (estado == 2) && (PORTCbits.RC3 == 0)){
 [e :U 327 ]
 [e $ ! && == _estado -> 2 `i == -> . . _PORTCbits 0 3 `i -> 0 `i 329  ]
 {
-"138
-[; ;MaquinaDeLavar.c: 138:             PORTBbits.RB5 =1;
+"136
+[; ;MaquinaDeLavar.c: 136:             PORTBbits.RB5 =1;
 [e = . . _PORTBbits 0 5 -> -> 1 `i `uc ]
-"139
-[; ;MaquinaDeLavar.c: 139:             PORTBbits.RB7 =0;
+"137
+[; ;MaquinaDeLavar.c: 137:             PORTBbits.RB7 =0;
 [e = . . _PORTBbits 0 7 -> -> 0 `i `uc ]
-"140
-[; ;MaquinaDeLavar.c: 140:             PORTBbits.RB6 =0;
+"138
+[; ;MaquinaDeLavar.c: 138:             PORTBbits.RB6 =0;
 [e = . . _PORTBbits 0 6 -> -> 0 `i `uc ]
-"141
-[; ;MaquinaDeLavar.c: 141:             _delay((unsigned long)((500)*(4000000/4000.0)));
+"139
+[; ;MaquinaDeLavar.c: 139:             _delay((unsigned long)((500)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 500 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"142
-[; ;MaquinaDeLavar.c: 142:             PORTBbits.RB7 = 1;
+"140
+[; ;MaquinaDeLavar.c: 140:             PORTBbits.RB7 = 1;
 [e = . . _PORTBbits 0 7 -> -> 1 `i `uc ]
-"143
-[; ;MaquinaDeLavar.c: 143:             sprintf(estadoMes, "Agitar");
+"141
+[; ;MaquinaDeLavar.c: 141:             sprintf(estadoMes, "Agitar");
 [e ( _sprintf (1 , &U _estadoMes :s 4C ]
-"144
-[; ;MaquinaDeLavar.c: 144:             tempo1();
+"142
+[; ;MaquinaDeLavar.c: 142:             tempo1();
 [e ( _tempo1 ..  ]
-"145
-[; ;MaquinaDeLavar.c: 145:             TXREG = 2;
+"143
+[; ;MaquinaDeLavar.c: 143:             TXREG = 2;
 [e = _TXREG -> -> 2 `i `uc ]
-"146
-[; ;MaquinaDeLavar.c: 146:             estado = estado + 1;
+"144
+[; ;MaquinaDeLavar.c: 144:             estado = estado + 1;
 [e = _estado + _estado -> 1 `i ]
-"147
-[; ;MaquinaDeLavar.c: 147:             escreve();
+"145
+[; ;MaquinaDeLavar.c: 145:             escreve();
 [e ( _escreve ..  ]
-"148
-[; ;MaquinaDeLavar.c: 148:         }
+"146
+[; ;MaquinaDeLavar.c: 146:         }
 }
 [e $U 330  ]
-"149
-[; ;MaquinaDeLavar.c: 149:         else if (estado == 3){
+"147
+[; ;MaquinaDeLavar.c: 147:         else if (estado == 3){
 [e :U 329 ]
 [e $ ! == _estado -> 3 `i 331  ]
 {
-"150
-[; ;MaquinaDeLavar.c: 150:             PORTBbits.RB5 =0;
+"148
+[; ;MaquinaDeLavar.c: 148:             PORTBbits.RB5 =0;
 [e = . . _PORTBbits 0 5 -> -> 0 `i `uc ]
-"151
-[; ;MaquinaDeLavar.c: 151:             PORTBbits.RB7 =0;
+"149
+[; ;MaquinaDeLavar.c: 149:             PORTBbits.RB7 =0;
 [e = . . _PORTBbits 0 7 -> -> 0 `i `uc ]
-"152
-[; ;MaquinaDeLavar.c: 152:             _delay((unsigned long)((500)*(4000000/4000.0)));
+"150
+[; ;MaquinaDeLavar.c: 150:             _delay((unsigned long)((500)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 500 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"153
-[; ;MaquinaDeLavar.c: 153:             PORTBbits.RB6 =1;
+"151
+[; ;MaquinaDeLavar.c: 151:             PORTBbits.RB6 =1;
 [e = . . _PORTBbits 0 6 -> -> 1 `i `uc ]
-"154
-[; ;MaquinaDeLavar.c: 154:             sprintf(estadoMes, "Drenar");
+"152
+[; ;MaquinaDeLavar.c: 152:             sprintf(estadoMes, "Drenar");
 [e ( _sprintf (1 , &U _estadoMes :s 5C ]
-"155
-[; ;MaquinaDeLavar.c: 155:             TXREG = 3;
+"153
+[; ;MaquinaDeLavar.c: 153:             TXREG = 3;
 [e = _TXREG -> -> 3 `i `uc ]
-"156
-[; ;MaquinaDeLavar.c: 156:             estado = estado + 1;
+"154
+[; ;MaquinaDeLavar.c: 154:             estado = estado + 1;
 [e = _estado + _estado -> 1 `i ]
-"157
-[; ;MaquinaDeLavar.c: 157:             escreve();
+"155
+[; ;MaquinaDeLavar.c: 155:             escreve();
 [e ( _escreve ..  ]
-"158
-[; ;MaquinaDeLavar.c: 158:         }
+"156
+[; ;MaquinaDeLavar.c: 156:         }
 }
 [e $U 332  ]
-"159
-[; ;MaquinaDeLavar.c: 159:         else if( (estado == 4) && (PORTCbits.RC0 == 0 )){
+"157
+[; ;MaquinaDeLavar.c: 157:         else if( (estado == 4) && (PORTCbits.RC0 == 0 )){
 [e :U 331 ]
 [e $ ! && == _estado -> 4 `i == -> . . _PORTCbits 0 0 `i -> 0 `i 333  ]
 {
-"160
-[; ;MaquinaDeLavar.c: 160:              PORTBbits.RB5 =1;
+"158
+[; ;MaquinaDeLavar.c: 158:              PORTBbits.RB5 =1;
 [e = . . _PORTBbits 0 5 -> -> 1 `i `uc ]
-"161
-[; ;MaquinaDeLavar.c: 161:              PORTBbits.RB7 =1;
+"159
+[; ;MaquinaDeLavar.c: 159:              PORTBbits.RB7 =1;
 [e = . . _PORTBbits 0 7 -> -> 1 `i `uc ]
-"162
-[; ;MaquinaDeLavar.c: 162:              sprintf(estadoMes, "Centrif.");
+"160
+[; ;MaquinaDeLavar.c: 160:              sprintf(estadoMes, "Centrif.");
 [e ( _sprintf (1 , &U _estadoMes :s 6C ]
-"163
-[; ;MaquinaDeLavar.c: 163:              tempo1();
+"161
+[; ;MaquinaDeLavar.c: 161:              tempo1();
 [e ( _tempo1 ..  ]
-"164
-[; ;MaquinaDeLavar.c: 164:              TXREG = 4;
+"162
+[; ;MaquinaDeLavar.c: 162:              TXREG = 4;
 [e = _TXREG -> -> 4 `i `uc ]
-"165
-[; ;MaquinaDeLavar.c: 165:              estado = estado + 1;
+"163
+[; ;MaquinaDeLavar.c: 163:              estado = estado + 1;
 [e = _estado + _estado -> 1 `i ]
-"166
-[; ;MaquinaDeLavar.c: 166:              escreve();
+"164
+[; ;MaquinaDeLavar.c: 164:              escreve();
 [e ( _escreve ..  ]
-"167
-[; ;MaquinaDeLavar.c: 167:         }
+"165
+[; ;MaquinaDeLavar.c: 165:         }
 }
 [e $U 334  ]
-"168
-[; ;MaquinaDeLavar.c: 168:         else if(estado == 5){
+"166
+[; ;MaquinaDeLavar.c: 166:         else if(estado == 5){
 [e :U 333 ]
 [e $ ! == _estado -> 5 `i 335  ]
 {
-"169
-[; ;MaquinaDeLavar.c: 169:             PORTBbits.RB7 =0;
+"167
+[; ;MaquinaDeLavar.c: 167:             PORTBbits.RB7 =0;
 [e = . . _PORTBbits 0 7 -> -> 0 `i `uc ]
-"170
-[; ;MaquinaDeLavar.c: 170:             PORTBbits.RB6 =0;
+"168
+[; ;MaquinaDeLavar.c: 168:             PORTBbits.RB6 =0;
 [e = . . _PORTBbits 0 6 -> -> 0 `i `uc ]
-"171
-[; ;MaquinaDeLavar.c: 171:              PORTBbits.RB5 =0;
+"169
+[; ;MaquinaDeLavar.c: 169:              PORTBbits.RB5 =0;
 [e = . . _PORTBbits 0 5 -> -> 0 `i `uc ]
-"172
-[; ;MaquinaDeLavar.c: 172:             _delay((unsigned long)((500)*(4000000/4000.0)));
+"170
+[; ;MaquinaDeLavar.c: 170:             _delay((unsigned long)((500)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 500 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"173
-[; ;MaquinaDeLavar.c: 173:              PORTBbits.RB7 =1;
+"171
+[; ;MaquinaDeLavar.c: 171:              PORTBbits.RB7 =1;
 [e = . . _PORTBbits 0 7 -> -> 1 `i `uc ]
-"174
-[; ;MaquinaDeLavar.c: 174:              PORTBbits.RB6 =1;
+"172
+[; ;MaquinaDeLavar.c: 172:              PORTBbits.RB6 =1;
 [e = . . _PORTBbits 0 6 -> -> 1 `i `uc ]
-"175
-[; ;MaquinaDeLavar.c: 175:             sprintf(estadoMes, "Enxaguar");
+"173
+[; ;MaquinaDeLavar.c: 173:             sprintf(estadoMes, "Enxaguar");
 [e ( _sprintf (1 , &U _estadoMes :s 7C ]
-"176
-[; ;MaquinaDeLavar.c: 176:             TXREG = 5;
+"174
+[; ;MaquinaDeLavar.c: 174:             TXREG = 5;
 [e = _TXREG -> -> 5 `i `uc ]
-"177
-[; ;MaquinaDeLavar.c: 177:             estado = estado + 1;
+"175
+[; ;MaquinaDeLavar.c: 175:             estado = estado + 1;
 [e = _estado + _estado -> 1 `i ]
-"178
-[; ;MaquinaDeLavar.c: 178:             escreve();
+"176
+[; ;MaquinaDeLavar.c: 176:             escreve();
 [e ( _escreve ..  ]
-"179
-[; ;MaquinaDeLavar.c: 179:         }
+"177
+[; ;MaquinaDeLavar.c: 177:         }
 }
 [e $U 336  ]
-"180
-[; ;MaquinaDeLavar.c: 180:         else if((estado == 6) && (PORTCbits.RC3 == 0)){
+"178
+[; ;MaquinaDeLavar.c: 178:         else if((estado == 6) && (PORTCbits.RC3 == 0)){
 [e :U 335 ]
 [e $ ! && == _estado -> 6 `i == -> . . _PORTCbits 0 3 `i -> 0 `i 337  ]
 {
-"181
-[; ;MaquinaDeLavar.c: 181:             PORTBbits.RB7 =0;
+"179
+[; ;MaquinaDeLavar.c: 179:             PORTBbits.RB7 =0;
 [e = . . _PORTBbits 0 7 -> -> 0 `i `uc ]
-"182
-[; ;MaquinaDeLavar.c: 182:             PORTBbits.RB6 =0;
+"180
+[; ;MaquinaDeLavar.c: 180:             PORTBbits.RB6 =0;
 [e = . . _PORTBbits 0 6 -> -> 0 `i `uc ]
-"183
-[; ;MaquinaDeLavar.c: 183:             _delay((unsigned long)((500)*(4000000/4000.0)));
+"181
+[; ;MaquinaDeLavar.c: 181:             _delay((unsigned long)((500)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 500 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"184
-[; ;MaquinaDeLavar.c: 184:             PORTBbits.RB7 =1;
+"182
+[; ;MaquinaDeLavar.c: 182:             PORTBbits.RB7 =1;
 [e = . . _PORTBbits 0 7 -> -> 1 `i `uc ]
-"185
-[; ;MaquinaDeLavar.c: 185:             PORTBbits.RB5 =1;
+"183
+[; ;MaquinaDeLavar.c: 183:             PORTBbits.RB5 =1;
 [e = . . _PORTBbits 0 5 -> -> 1 `i `uc ]
-"186
-[; ;MaquinaDeLavar.c: 186:             sprintf(estadoMes, "Agitar");
+"184
+[; ;MaquinaDeLavar.c: 184:             sprintf(estadoMes, "Agitar");
 [e ( _sprintf (1 , &U _estadoMes :s 8C ]
-"187
-[; ;MaquinaDeLavar.c: 187:             tempo1();
+"185
+[; ;MaquinaDeLavar.c: 185:             tempo1();
 [e ( _tempo1 ..  ]
-"188
-[; ;MaquinaDeLavar.c: 188:             TXREG = 6;
+"186
+[; ;MaquinaDeLavar.c: 186:             TXREG = 6;
 [e = _TXREG -> -> 6 `i `uc ]
-"189
-[; ;MaquinaDeLavar.c: 189:             estado = estado + 1;
+"187
+[; ;MaquinaDeLavar.c: 187:             estado = estado + 1;
 [e = _estado + _estado -> 1 `i ]
-"190
-[; ;MaquinaDeLavar.c: 190:             escreve();
+"188
+[; ;MaquinaDeLavar.c: 188:             escreve();
 [e ( _escreve ..  ]
-"191
-[; ;MaquinaDeLavar.c: 191:         }
+"189
+[; ;MaquinaDeLavar.c: 189:         }
 }
 [e $U 338  ]
-"192
-[; ;MaquinaDeLavar.c: 192:         else if (estado == 7){
+"190
+[; ;MaquinaDeLavar.c: 190:         else if (estado == 7){
 [e :U 337 ]
 [e $ ! == _estado -> 7 `i 339  ]
 {
-"193
-[; ;MaquinaDeLavar.c: 193:             PORTBbits.RB7 =0;
+"191
+[; ;MaquinaDeLavar.c: 191:             PORTBbits.RB7 =0;
 [e = . . _PORTBbits 0 7 -> -> 0 `i `uc ]
-"194
-[; ;MaquinaDeLavar.c: 194:             PORTBbits.RB5 =0;
+"192
+[; ;MaquinaDeLavar.c: 192:             PORTBbits.RB5 =0;
 [e = . . _PORTBbits 0 5 -> -> 0 `i `uc ]
-"195
-[; ;MaquinaDeLavar.c: 195:             _delay((unsigned long)((500)*(4000000/4000.0)));
+"193
+[; ;MaquinaDeLavar.c: 193:             _delay((unsigned long)((500)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 500 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"196
-[; ;MaquinaDeLavar.c: 196:             PORTBbits.RB6 =1;
+"194
+[; ;MaquinaDeLavar.c: 194:             PORTBbits.RB6 =1;
 [e = . . _PORTBbits 0 6 -> -> 1 `i `uc ]
-"197
-[; ;MaquinaDeLavar.c: 197:             sprintf(estadoMes, "Drenar");
+"195
+[; ;MaquinaDeLavar.c: 195:             sprintf(estadoMes, "Drenar");
 [e ( _sprintf (1 , &U _estadoMes :s 9C ]
-"198
-[; ;MaquinaDeLavar.c: 198:             TXREG = 7;
+"196
+[; ;MaquinaDeLavar.c: 196:             TXREG = 7;
 [e = _TXREG -> -> 7 `i `uc ]
-"199
-[; ;MaquinaDeLavar.c: 199:             estado = estado + 1;
+"197
+[; ;MaquinaDeLavar.c: 197:             estado = estado + 1;
 [e = _estado + _estado -> 1 `i ]
-"200
-[; ;MaquinaDeLavar.c: 200:             escreve();
+"198
+[; ;MaquinaDeLavar.c: 198:             escreve();
 [e ( _escreve ..  ]
-"201
-[; ;MaquinaDeLavar.c: 201:         }
+"199
+[; ;MaquinaDeLavar.c: 199:         }
 }
 [e $U 340  ]
-"202
-[; ;MaquinaDeLavar.c: 202:         else if((estado == 8) && (PORTCbits.RC0 == 0 )){
+"200
+[; ;MaquinaDeLavar.c: 200:         else if((estado == 8) && (PORTCbits.RC0 == 0 )){
 [e :U 339 ]
 [e $ ! && == _estado -> 8 `i == -> . . _PORTCbits 0 0 `i -> 0 `i 341  ]
 {
-"203
-[; ;MaquinaDeLavar.c: 203:             PORTBbits.RB7 =1;
+"201
+[; ;MaquinaDeLavar.c: 201:             PORTBbits.RB7 =1;
 [e = . . _PORTBbits 0 7 -> -> 1 `i `uc ]
-"204
-[; ;MaquinaDeLavar.c: 204:             PORTBbits.RB5 =1;
+"202
+[; ;MaquinaDeLavar.c: 202:             PORTBbits.RB5 =1;
 [e = . . _PORTBbits 0 5 -> -> 1 `i `uc ]
-"205
-[; ;MaquinaDeLavar.c: 205:             sprintf(estadoMes, "Centrif.");
+"203
+[; ;MaquinaDeLavar.c: 203:             sprintf(estadoMes, "Centrif.");
 [e ( _sprintf (1 , &U _estadoMes :s 10C ]
-"206
-[; ;MaquinaDeLavar.c: 206:             tempo1();
+"204
+[; ;MaquinaDeLavar.c: 204:             tempo1();
 [e ( _tempo1 ..  ]
-"207
-[; ;MaquinaDeLavar.c: 207:             TXREG = 8;
+"205
+[; ;MaquinaDeLavar.c: 205:             TXREG = 8;
 [e = _TXREG -> -> 8 `i `uc ]
-"208
-[; ;MaquinaDeLavar.c: 208:             estado = estado + 1;
+"206
+[; ;MaquinaDeLavar.c: 206:             estado = estado + 1;
 [e = _estado + _estado -> 1 `i ]
-"209
-[; ;MaquinaDeLavar.c: 209:             escreve();
+"207
+[; ;MaquinaDeLavar.c: 207:             escreve();
 [e ( _escreve ..  ]
-"210
-[; ;MaquinaDeLavar.c: 210:         }else if (estado == 9){
+"208
+[; ;MaquinaDeLavar.c: 208:         }else if (estado == 9){
 }
 [e $U 342  ]
 [e :U 341 ]
 [e $ ! == _estado -> 9 `i 343  ]
 {
-"211
-[; ;MaquinaDeLavar.c: 211:             PORTBbits.RB7 =0;
+"209
+[; ;MaquinaDeLavar.c: 209:             PORTBbits.RB7 =0;
 [e = . . _PORTBbits 0 7 -> -> 0 `i `uc ]
-"212
-[; ;MaquinaDeLavar.c: 212:             PORTBbits.RB5 =0;
+"210
+[; ;MaquinaDeLavar.c: 210:             PORTBbits.RB5 =0;
 [e = . . _PORTBbits 0 5 -> -> 0 `i `uc ]
-"213
-[; ;MaquinaDeLavar.c: 213:             PORTBbits.RB6 =0;
+"211
+[; ;MaquinaDeLavar.c: 211:             PORTBbits.RB6 =0;
 [e = . . _PORTBbits 0 6 -> -> 0 `i `uc ]
-"214
-[; ;MaquinaDeLavar.c: 214:             PORTBbits.RB0 = 0;
+"212
+[; ;MaquinaDeLavar.c: 212:             PORTBbits.RB0 = 0;
 [e = . . _PORTBbits 0 0 -> -> 0 `i `uc ]
-"215
-[; ;MaquinaDeLavar.c: 215:             estado = 0;
+"213
+[; ;MaquinaDeLavar.c: 213:             estado = 0;
 [e = _estado -> 0 `i ]
-"216
-[; ;MaquinaDeLavar.c: 216:             TXREG = 0;
+"214
+[; ;MaquinaDeLavar.c: 214:             TXREG = 0;
 [e = _TXREG -> -> 0 `i `uc ]
-"217
-[; ;MaquinaDeLavar.c: 217:             sprintf(estadoMes, "Desligado");
+"215
+[; ;MaquinaDeLavar.c: 215:             sprintf(estadoMes, "Desligado");
 [e ( _sprintf (1 , &U _estadoMes :s 11C ]
-"218
-[; ;MaquinaDeLavar.c: 218:             escreve();
+"216
+[; ;MaquinaDeLavar.c: 216:             escreve();
 [e ( _escreve ..  ]
-"219
-[; ;MaquinaDeLavar.c: 219:         }
+"217
+[; ;MaquinaDeLavar.c: 217:         }
 }
 [e :U 343 ]
 [e :U 342 ]
@@ -1379,65 +1365,65 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 330 ]
 [e :U 328 ]
 [e :U 326 ]
-"220
-[; ;MaquinaDeLavar.c: 220: }
+"218
+[; ;MaquinaDeLavar.c: 218: }
 [e :UE 324 ]
 }
-"225
-[; ;MaquinaDeLavar.c: 225: void escreve(void)
+"223
+[; ;MaquinaDeLavar.c: 223: void escreve(void)
 [v _escreve `(v ~T0 @X0 1 ef ]
-"226
-[; ;MaquinaDeLavar.c: 226: {
+"224
+[; ;MaquinaDeLavar.c: 224: {
 {
 [e :U _escreve ]
 [f ]
-"228
-[; ;MaquinaDeLavar.c: 228:     lcd_clear();
+"226
+[; ;MaquinaDeLavar.c: 226:     lcd_clear();
 [e ( _lcd_clear ..  ]
-"229
-[; ;MaquinaDeLavar.c: 229:     lcd_goto (0);
+"227
+[; ;MaquinaDeLavar.c: 227:     lcd_goto (0);
 [e ( _lcd_goto (1 -> -> 0 `i `uc ]
-"230
-[; ;MaquinaDeLavar.c: 230:     lcd_puts ( "Estado:");
+"228
+[; ;MaquinaDeLavar.c: 228:     lcd_puts ( "Estado:");
 [e ( _lcd_puts (1 :s 12C ]
-"231
-[; ;MaquinaDeLavar.c: 231:     lcd_puts (estadoMes);
+"229
+[; ;MaquinaDeLavar.c: 229:     lcd_puts (estadoMes);
 [e ( _lcd_puts (1 -> &U _estadoMes `*Cuc ]
-"233
-[; ;MaquinaDeLavar.c: 233: }
+"231
+[; ;MaquinaDeLavar.c: 231: }
 [e :UE 344 ]
 }
-"234
-[; ;MaquinaDeLavar.c: 234: void escreve2(void)
+"232
+[; ;MaquinaDeLavar.c: 232: void escreve2(void)
 [v _escreve2 `(v ~T0 @X0 1 ef ]
-"235
-[; ;MaquinaDeLavar.c: 235: {
+"233
+[; ;MaquinaDeLavar.c: 233: {
 {
 [e :U _escreve2 ]
 [f ]
-"237
-[; ;MaquinaDeLavar.c: 237:     lcd_clear();
+"235
+[; ;MaquinaDeLavar.c: 235:     lcd_clear();
 [e ( _lcd_clear ..  ]
-"238
-[; ;MaquinaDeLavar.c: 238:     lcd_goto (0);
+"236
+[; ;MaquinaDeLavar.c: 236:     lcd_goto (0);
 [e ( _lcd_goto (1 -> -> 0 `i `uc ]
-"239
-[; ;MaquinaDeLavar.c: 239:     lcd_puts ( "Estado:");
+"237
+[; ;MaquinaDeLavar.c: 237:     lcd_puts ( "Estado:");
 [e ( _lcd_puts (1 :s 13C ]
-"240
-[; ;MaquinaDeLavar.c: 240:     lcd_puts (estadoMes);
+"238
+[; ;MaquinaDeLavar.c: 238:     lcd_puts (estadoMes);
 [e ( _lcd_puts (1 -> &U _estadoMes `*Cuc ]
-"241
-[; ;MaquinaDeLavar.c: 241:     lcd_goto (40);
+"239
+[; ;MaquinaDeLavar.c: 239:     lcd_goto (40);
 [e ( _lcd_goto (1 -> -> 40 `i `uc ]
-"242
-[; ;MaquinaDeLavar.c: 242:     lcd_puts ("Tempo:");
+"240
+[; ;MaquinaDeLavar.c: 240:     lcd_puts ("Tempo:");
 [e ( _lcd_puts (1 :s 14C ]
-"243
-[; ;MaquinaDeLavar.c: 243:     lcd_puts (tempoDis);
+"241
+[; ;MaquinaDeLavar.c: 241:     lcd_puts (tempoDis);
 [e ( _lcd_puts (1 -> &U _tempoDis `*Cuc ]
-"245
-[; ;MaquinaDeLavar.c: 245: }
+"243
+[; ;MaquinaDeLavar.c: 243: }
 [e :UE 345 ]
 }
 [p f _sprintf 8388736 ]

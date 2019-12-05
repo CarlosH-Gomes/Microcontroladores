@@ -4673,7 +4673,11 @@ extern volatile __bit nWR __attribute__((address(0x7C21)));
 extern volatile __bit nWRITE __attribute__((address(0x7E3A)));
 # 12 "MaquinaDeLavar.c" 2
 # 1 "./configura.h" 1
-# 13 "./configura.h"
+
+
+
+
+
 #pragma config OSC = INTIO67
 #pragma config FCMEN = OFF
 #pragma config IESO = OFF
@@ -4798,7 +4802,7 @@ extern __attribute__((nonreentrant)) void _delaywdt(unsigned long);
 #pragma intrinsic(_delay3)
 extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 32 "E:\\ProgramasWindowns\\Microchip\\xc8\\v2.00\\pic\\include\\xc.h" 2 3
-# 71 "./configura.h" 2
+# 64 "./configura.h" 2
 
 void config(void)
 {
@@ -4850,9 +4854,8 @@ extern void lcd_init(void);
 
 extern void lcd_putch(char);
 # 14 "MaquinaDeLavar.c" 2
-# 27 "MaquinaDeLavar.c"
-float volts=0;
-int contador = 0, bits=0, tempo=0, estado=0;
+# 28 "MaquinaDeLavar.c"
+int tempo=0, estado=0;
 char estadoMes[15],tempoDis[5];
 
 void escreve(void);
@@ -4900,8 +4903,6 @@ void main(void) {
             estadosMaquina();
         }
     }
-
-
 }
 
 void __attribute__((picinterrupt("high_priority"))) tmr (void)
