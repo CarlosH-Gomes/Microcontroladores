@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="376dp"
+        android:layout_gravity="center"
+        android:gravity="center|center_vertical">
+
+
+        <TableRow
+            android:layout_width="421dp"
+            android:layout_height="120dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_frente"
+                android:layout_width="150dp"
+                android:layout_height="76dp"
+                android:layout_marginBottom="10dp"
+                android:background="#B2309EB1"
+                android:text="Frente" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="248dp"
+            android:layout_height="195dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_esquerda"
+                android:layout_width="164dp"
+                android:layout_height="76dp"
+                android:layout_marginRight="10dp"
+                android:background="#B2309EB1"
+                android:text="Esquerda" />
+
+            <Button
+                android:id="@+id/btn_direita"
+                android:layout_width="164dp"
+                android:layout_height="76dp"
+                android:background="#B2309EB1"
+                android:text="Direita" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_tras"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:layout_marginTop="10dp"
+                android:background="#B2309EB1"
+                android:text="Ré" />
+
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
